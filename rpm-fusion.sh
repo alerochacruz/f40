@@ -33,7 +33,7 @@ sudo dnf install --assumeyes \
 sudo dnf swap --assumeyes --allowerasing ffmpeg-free ffmpeg
 
 
-# 3. Install additional codec
+# 3. Install additional codecs
 # This will allows the application using the gstreamer framework and other
 # multimedia software, to play others restricted codecs:
 # ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -41,6 +41,8 @@ sudo dnf swap --assumeyes --allowerasing ffmpeg-free ffmpeg
 # by gstreamer enabled applications:
 sudo dnf update --assumeyes @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
 
+
+# 4. Install sound-and-video commplement
 # The following command will install the sound-and-video complement packages
 # needed by some applications:
 sudo dnf group install --assumeyes "Sound and Video"
