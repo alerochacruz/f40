@@ -23,7 +23,7 @@ mkdir --parents ~/Applications
 mv --verbose /tmp/liquidprompt/liquidprompt ~/Applications
 
 
-# 3. Set up ~/.liquidpromtrc configuration file
+# 3. Set up ~/.liquidpromptrc configuration file
 # ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 cat << "EOF" > ~/.liquidpromptrc
 LP_ENABLE_SHLVL=0
