@@ -12,7 +12,7 @@ shopt -s failglob
 # Use theme: lp_theme <theme_name>
 
 
-# 1. Clone Liquidprompt
+# 1. Clone Liquid Prompt
 # ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 git clone https://github.com/nojhan/liquidprompt.git /tmp/liquidprompt
 
@@ -23,21 +23,21 @@ mkdir --parents ~/Applications
 mv --verbose /tmp/liquidprompt/liquidprompt ~/Applications
 
 
-# 3. Setup configuration file
+# 3. Set up ~/.liquidpromtrc configuration file
 # ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 cat << "EOF" > ~/.liquidpromptrc
 LP_ENABLE_SHLVL=0
 EOF
 
 
-# 4. Setup Pureship theme
+# 4. Set up Pureship theme
 # ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 git clone https://github.com/nojhan/lp-pureship.git /tmp/lp-pureship
 mkdir --parents ~/.config/liquidprompt/themes/pureship
 mv --verbose /tmp/lp-pureship/starship.theme ~/.config/liquidprompt/themes/pureship
 
 
-# 5. Append the foollwing to ~/.bashrc
+# 5. Set up ~/.bashrc
 # ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 cat << "EOF" >> ~/.bashrc
 
