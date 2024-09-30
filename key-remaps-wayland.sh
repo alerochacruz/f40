@@ -41,7 +41,7 @@ capslock = layer(control)
 EOF
 
 
-# 3. Set up key systemd service
+# 3. Set up keyd systemd service
 # ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 sudo systemctl restart keyd
 sudo systemctl enable keyd
