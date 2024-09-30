@@ -27,14 +27,17 @@ sudo tee --append /etc/keyd/default.conf > /dev/null << "EOF"
 *
 
 [main]
+# Enable debug logs. Check log with: journalctl -u keyd.service 
+# debug = true
+
 # Remap Right Shift (Shift_R) to Left Alt (Alt_L)
-rightshift = leftalt
+rightshift = layer(alt)
 
 # Remap Right Alt (Alt_R) to Left Shift (Shift_L)
-rightalt = leftshift
+rightalt = layer(shift)
 
 # Remap Caps Lock to Left Control (Control_L)
-capslock = leftcontrol
+capslock = layer(control)
 EOF
 
 
