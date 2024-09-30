@@ -34,8 +34,7 @@ rightshift = leftalt
 rightalt = leftshift
 
 # Remap Caps Lock to Left Control (Control_L)
-# capslock = leftctrl
-capslock = control
+capslock = leftcontrol
 EOF
 
 
