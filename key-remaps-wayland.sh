@@ -27,7 +27,7 @@ sudo tee --append /etc/keyd/default.conf > /dev/null << "EOF"
 *
 
 [main]
-# Enable debug logs. Check log with: journalctl -u keyd.service 
+# Enable debug logs. Check logs with: journalctl -u keyd.service 
 # debug = true
 
 # Remap Right Shift (Shift_R) to Left Alt (Alt_L)
