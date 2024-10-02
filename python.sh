@@ -14,3 +14,8 @@ sudo dnf install --assumeyes \
   python3-pip \
   pipx
 
+pipx ensurepath
+
+pip3 --version
+pipx --version
+
