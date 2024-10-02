@@ -12,3 +12,6 @@ shopt -s failglob     # Fail if a glob pattern does not match any files
 ./liquid-prompt.sh
 ./key-remaps-wayland.sh
 ./alacritty.sh
+./python.sh
+./nodejs.sh
+
