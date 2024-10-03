@@ -53,3 +53,12 @@ cat << "EOF" >> ~/.inputrc
 set enable-bracketed-paste
 EOF
 
+
+# 5. Set the distance between tab stops to 2 characters
+# ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+cat << "EOF" >> ~/.bashrc
+
+# Set tab stops every 2 spaces
+tabs -2
+EOF
+
