@@ -19,6 +19,7 @@ cp --verbose ./dotfiles/tmux/tmux.conf ~/.config/tmux
 
 
 # 3. Clone TPM
+# Inside tmux, press <prefix> + I (capital i, as in Install) to fetch the plugins
 # ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
