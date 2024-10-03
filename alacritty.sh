@@ -73,5 +73,8 @@ style = "Medium"
 [font.normal]
 family = "Source Code Pro"
 style = "Regular"
+
+[env]
+TERM="xterm-256color"
 EOF
 
