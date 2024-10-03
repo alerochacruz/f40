@@ -15,4 +15,4 @@ shopt -s failglob     # Fail if a glob pattern does not match any files
 ./tmux.sh
 ./python.sh
 ./nodejs.sh
-
+./neovim.sh
