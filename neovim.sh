@@ -10,7 +10,7 @@ shopt -s failglob
 # 0. Obliterate Nano
 # ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 sudo dnf remove --assumeyes nano nano-default-editor
-sudo dnf autoremove
+sudo dnf autoremove --assumeyes
 
 
 # 1. Install Neovim
