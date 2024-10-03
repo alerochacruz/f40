@@ -15,5 +15,10 @@ sudo dnf install --assumeyes tmux
 # 2. Set up configuration file
 # ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 mkdir --parents --verbose ~/.config/tmux
-
 cp --verbose ./dotfiles/tmux/tmux.conf ~/.config/tmux
+
+
+# 3. Clone TPM
+# ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
