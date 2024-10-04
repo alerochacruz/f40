@@ -31,7 +31,9 @@ return {
       require("mason-lspconfig").setup({
         ensure_installed = {
           "lua_ls",                -- Lua LSP
-          "tsserver",              -- JavaScript LSP
+          -- DEPRECATED on nvim v0.10.1
+          -- "tsserver",              -- JavaScript LSP
+          "ts_ls",                 -- JavaScript LSP
           "jedi_language_server",  -- Python LSP
           "intelephense",          -- PHP LSP
           "cssls",                 -- CSS LSP
@@ -55,7 +57,11 @@ return {
       lspconfig.lua_ls.setup({
         capabilities = capabilities,
       })
-      lspconfig.tsserver.setup({
+      -- DEPRECATES on nvim v0.10.1
+      -- lspconfig.tsserver.setup({
+      --   capabilities = capabilities,
+      -- })
+      lspconfig.ts_ls.setup({
         capabilities = capabilities,
       })
       lspconfig.jedi_language_server.setup({
