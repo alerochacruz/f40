@@ -10,7 +10,7 @@ shopt -s failglob     # Fail if a glob pattern does not match any files
 ./rpm-fusion.sh
 ./bash-config.sh
 ./basic-tools.sh
-./liquid-prompt.sh
+./nothing-prompt.sh
 ./key-remaps-wayland.sh
 ./alacritty.sh
 ./tmux.sh
