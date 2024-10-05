@@ -12,7 +12,7 @@ shopt -s failglob     # Fail if a glob pattern does not match any files
 ./basic-tools.sh
 ./nothing-prompt.sh
 ./key-remaps-wayland.sh
-./alacritty.sh
+./gnome-terminal.sh
 ./tmux.sh
 ./python.sh
 ./nodejs.sh
