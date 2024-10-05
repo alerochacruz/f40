@@ -1,0 +1,16 @@
+alias ff='firefox'
+alias ls='ls -p --color=auto'
+alias li='ls -p --color=auto -1'
+alias ld='\ls -d1 --color=auto */'
+alias octal='stat -c "%a %n"'
+alias duu='du -had1 | sort -hr'
+alias fcdu='for i in G M K; do du -ah | grep ^[0-9\.]*$i | sort -nr -k 1; done | head -n 20'
+alias xcr='xclip -sel clip -r'
+alias cw='pwd | xclip -sel clip -r'
+alias llblk='lsblk -o name,size,type,label,mountpoint,uuid'
+alias ngfind="find ./ -not -iwholename '*.git*'"
+alias o='xdg-open'
+alias gs="git status"
+alias gsa="git status --untracked-files=all"
+alias gl="git log --pretty=format:'%Cred%h%Creset %s %Cgreen%cr%Creset %C(bold red)%d%Creset'"
+alias vi="nvim"

@@ -1,0 +1,46 @@
+function grepmd() {
+  grep --color=always -riF --include=*.md "$1" .
+}
+
+function egrepmd() {
+  grep --color=always -riE --include=*.md "$1" .
+}
+
+function greptxt() {
+  grep --color=always -riF --include=*.txt "$1" .
+}
+
+function cl() {
+    DIR="$*";
+        # if no DIR given, go home
+        if [ $# -lt 1 ]; then
+                DIR=$HOME;
+    fi;
+    builtin cd -P "${DIR}" && \
+    # use your preferred ls command
+        ls -F --color=auto
+}
+
+function cname() {
+    for item;
+    do
+        prename --verbose 's~\ ~_~g; y~A-Z~a-z~' "$item"
+    done
+}
+
+function xcat() {
+  cat "$1" | xclip -sel clip -r
+}
+
+function xreadlink() {
+  readlink -f "$1" | xclip -sel clip -r
+}
+
+function fhist() {
+  find ./ -type f -print0 | xargs -0 stat --format '%Y :%.19y %n' | sort -nr | cut -d: -f2- | head -n 30
+}
+
+function ly() {
+  ls | grep -E '[0-9]{4}' | awk '{ match($0, /[0-9]{4}/); print substr($0, RSTART, RLENGTH) "\t" $0  }' | sort -k1n | cut -f2-
+}
+
