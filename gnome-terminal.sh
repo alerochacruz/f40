@@ -44,11 +44,17 @@ if [ -z "$PROFILE_ID" ]; then
 fi
 
 # Apply settings to the profile
-dconf write /org/gnome/terminal/legacy/profiles:/:"$PROFILE_ID"/audible-bell false
-dconf write /org/gnome/terminal/legacy/profiles:/:"$PROFILE_ID"/use-system-font false
-dconf write /org/gnome/terminal/legacy/profiles:/:"$PROFILE_ID"/cell-height-scale 1.05
-dconf write /org/gnome/terminal/legacy/profiles:/:"$PROFILE_ID"/scrollbar-policy "'never'"
-dconf write /org/gnome/terminal/legacy/profiles:/:"$PROFILE_ID"/font "'Source Code Pro 15'"
+# dconf write /org/gnome/terminal/legacy/profiles:/:"$PROFILE_ID"/audible-bell false
+# dconf write /org/gnome/terminal/legacy/profiles:/:"$PROFILE_ID"/use-system-font false
+# dconf write /org/gnome/terminal/legacy/profiles:/:"$PROFILE_ID"/cell-height-scale 1.05
+# dconf write /org/gnome/terminal/legacy/profiles:/:"$PROFILE_ID"/scrollbar-policy "'never'"
+# dconf write /org/gnome/terminal/legacy/profiles:/:"$PROFILE_ID"/font "'Source Code Pro 15'"
+
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:"$PROFILE_ID"/ audible-bell false
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:"$PROFILE_ID"/ use-system-font false
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:"$PROFILE_ID"/ cell-height-scale 1.05
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:"$PROFILE_ID"/ scrollbar-policy 'never'
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:"$PROFILE_ID"/ font 'Source Code Pro 15'
 
 # Set the profile as default
 # Note: Replace 'your-profile-id-here' with the actual ID if you want to hardcode it or keep it dynamic as below
