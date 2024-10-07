@@ -14,7 +14,8 @@ sudo dnf install --assumeyes \
   fd-find \
   ripgrep \
   ncdu \
-  bat
+  bat \
+  shellcheck
 
 
 # 2. Install vimv
