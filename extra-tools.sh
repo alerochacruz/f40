@@ -56,4 +56,5 @@ EOF
 # ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 mkdir --parents --verbose ~/.config
 cp --archive --verbose ./dotfiles/bat ~/.config
+bat cache --build
 
