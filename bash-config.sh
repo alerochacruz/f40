@@ -69,3 +69,12 @@ mkdir --parents --verbose ~/.bashrc.d
 cp --verbose ./dotfiles/bash/bash-aliases ~/.bashrc.d
 cp --verbose ./dotfiles/bash/bash-functions ~/.bashrc.d
 
+
+# 7. Set directory tab completion for "cl" custom Bash function
+# ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+cat << "EOF" >> ~/.bashrc
+
+# Enable tab completion for the "cl" command using the "_cd" completion function
+complete -F _cd cl
+EOF
+
