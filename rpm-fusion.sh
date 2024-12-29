@@ -45,6 +45,6 @@ sudo dnf update --assumeyes @multimedia --setopt="install_weak_deps=False" --exc
 # 4. Install sound-and-video commplement
 # The following command will install the sound-and-video complement packages
 # needed by some applications:
-sudo dnf group install --assumeyes "Sound and Video"
-sudo dnf update --assumeyes @sound-and-video 
+# sudo dnf group install --assumeyes "Sound and Video"
+# sudo dnf update --assumeyes @sound-and-video 
 
