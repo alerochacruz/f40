@@ -18,3 +18,4 @@ shopt -s failglob     # Fail if a glob pattern does not match any files
 ./python.sh
 ./nodejs.sh
 ./neovim.sh
+./firefox.sh
