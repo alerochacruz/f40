@@ -42,7 +42,7 @@ sudo dnf swap --assumeyes --allowerasing ffmpeg-free ffmpeg
 sudo dnf update --assumeyes @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
 
 
-# 4. Install sound-and-video commplement
+# 4. Install sound-and-video complement
 # The following command will install the sound-and-video complement packages
 # needed by some applications:
 # sudo dnf group install --assumeyes "Sound and Video"
