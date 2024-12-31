@@ -7,12 +7,19 @@ set -x
 shopt -s failglob
 
 
-# 1. Create fontconfig directory
+# 1. Install fonts
+# ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+sudo dnf install --assumeyes \
+  rsms-inter-fonts \
+  source-foundry-hack-fonts
+
+
+# 2. Create fontconfig directory
 # ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 mkdir --parents ~/.config/fontconfig/
 
 
-# 2. Add font aliases
+# 3. Add font aliases
 # ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 cat << "EOF" >> ~/.config/fontconfig/fonts.conf
 <?xml version='1.0'?>
@@ -47,9 +54,15 @@ cat << "EOF" >> ~/.config/fontconfig/fonts.conf
     </edit>
   </match>
   <match>
-    <test name="family"><string>Open Sans L</string></test>
+    <test name="family"><string>Open Sans</string></test>
     <edit name="family" mode="assign" binding="strong">
       <string>Inter</string>
+    </edit>
+  </match>
+  <match>
+    <test name="family"><string>Noto Sans Mono</string></test>
+    <edit name="family" mode="assign" binding="strong">
+      <string>Hack</string>
     </edit>
   </match>
 </fontconfig>
