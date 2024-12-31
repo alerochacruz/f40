@@ -29,6 +29,10 @@ cat << "EOF" >> ~/.config/fontconfig/fonts.conf
     <family>sans-serif</family>
     <prefer><family>Inter</family></prefer>
   </alias>
+  <alias>
+    <family>monospace</family>
+    <prefer><family>Liberation Mono</family></prefer>
+  </alias>
   <match>
     <test name="family"><string>Arial</string></test>
     <edit name="family" mode="assign" binding="strong">
@@ -42,27 +46,9 @@ cat << "EOF" >> ~/.config/fontconfig/fonts.conf
     </edit>
   </match>
   <match>
-    <test name="family"><string>Liberation Sans</string></test>
-    <edit name="family" mode="assign" binding="strong">
-      <string>Inter</string>
-    </edit>
-  </match>
-  <match>
     <test name="family"><string>Nimbus Sans L</string></test>
     <edit name="family" mode="assign" binding="strong">
       <string>Inter</string>
-    </edit>
-  </match>
-  <match>
-    <test name="family"><string>Open Sans</string></test>
-    <edit name="family" mode="assign" binding="strong">
-      <string>Inter</string>
-    </edit>
-  </match>
-  <match>
-    <test name="family"><string>Noto Sans Mono</string></test>
-    <edit name="family" mode="assign" binding="strong">
-      <string>Hack</string>
     </edit>
   </match>
 </fontconfig>
