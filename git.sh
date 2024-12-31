@@ -26,6 +26,8 @@ git config --list
 ssh-keygen -q -t ed25519 -C "$SSH_KEYGEN_COMMENT" -N "$SSH_KEYGEN_PASSPHRASE" -f ~/.ssh/id_ed25519
 
 
-# Copy public ssh key to the clipboard
+# Copy public ssh key to the clipboard.
+# Paste on: GitHub > Settings > SSH and GPG keys
+# https://github.com/settings/keys
 # ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 xclip -sel clip < ~/.ssh/id_ed25519.pub
