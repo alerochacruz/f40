@@ -10,8 +10,7 @@ shopt -s failglob
 # 1. Install fonts
 # ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 sudo dnf install --assumeyes \
-  rsms-inter-fonts \
-  source-foundry-hack-fonts
+  rsms-inter-fonts
 
 
 # 2. Create fontconfig directory
