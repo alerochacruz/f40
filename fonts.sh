@@ -10,7 +10,8 @@ shopt -s failglob
 # 1. Install fonts
 # ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 sudo dnf install --assumeyes \
-  rsms-inter-fonts
+  rsms-inter-fonts \
+  google-roboto-fonts
 
 
 # 2. Create fontconfig directory
