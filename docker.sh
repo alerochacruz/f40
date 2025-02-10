@@ -8,7 +8,7 @@ shopt -s failglob
 
 
 # Mon 10 Feb 2025
-# Known Issue: Docker breaks KVM bridge networking, making it impossible to use both simultaneously.
+# Known Issue: Docker breaks KVM bridge networking, complicating simultaneous use.
 # Reference: https://wiki.archlinux.org/title/Docker#Starting_Docker_breaks_KVM_bridged_networking
 
 # Workaround: Save default iptables configuration to restore when using KVM
@@ -51,7 +51,7 @@ sudo dnf --no-gpgchecks install --assumeyes \
 # sudo systemctl start docker
 
 # To run Docker commands without sudo, add your user to the docker group:
-# sudo usermod -aG docker $USER
+# sudo usermod --append --groups docker $USER
 # A system reboot is necessary for the changes to take effect.
 
 # Verify that the installation is successful by running the hello-world image:
