@@ -47,14 +47,6 @@ curl \
 # Set up configuration file
 # ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 cat << "EOF" > ~/.config/alacritty/alacritty.toml
-import = [
-  # uncomment the flavour you want below:
-  # "~/.config/alacritty/catppuccin-latte.toml"
-  # "~/.config/alacritty/catppuccin-frappe.toml"
-  # "~/.config/alacritty/catppuccin-macchiato.toml"
-  "~/.config/alacritty/catppuccin-mocha.toml"
-]
-
 [font]
 size = 15.0
 
@@ -76,5 +68,14 @@ style = "Regular"
 
 [env]
 TERM="xterm-256color"
+
+[general]
+import = [
+  # uncomment the flavour you want below:
+  # "~/.config/alacritty/catppuccin-latte.toml"
+  # "~/.config/alacritty/catppuccin-frappe.toml"
+  # "~/.config/alacritty/catppuccin-macchiato.toml"
+  "~/.config/alacritty/catppuccin-mocha.toml"
+]
 EOF
 
